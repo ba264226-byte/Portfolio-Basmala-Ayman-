@@ -4,7 +4,7 @@
 مرحباً بكم! هذا المستودع يحتوي على مشاريع تحليل بيانات عملية قمت بتنفيذها باستخدام برنامج **Microsoft Excel** لصالح عملاء في العمل الحر (Freelancing Assignments).
 
 ## 🔗 رابط شيت الإكسيل التفاعلي (Live Project Link):
-👉 [اضغط هنا لفتح ملف الإكسيل ومتابعة الشغل لايف](اكتبي_رابط_الملف_بتاعك_هنا)
+https://onedrive.live.com/:x:/g/personal/8fcc4b77fa3ac7d1/IQCSqc75WNR0RYWvEay4pSRmAVJGa4LJor9c3XJHlMp6j48?rtime=-x5puxQl30g&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy84ZmNjNGI3N2ZhM2FjN2QxL0lRQ1NxYzc1V05SMFJZV3ZFYXk0cFNSbUFWSkdhNExKb3I5YzNYSkhsTXA2ajQ4P2U9ZldFMEFD
 
 ## 🚀 الخدمات والمشاريع المضمنة في الملف (Key Features):
 * **تنظيف البيانات (Data Cleaning):** إزالة البيانات المكررة، التعامل مع القيم المفقودة، وترتيب الجداول بشكل احترافي.
