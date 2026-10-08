@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Basmala Ayman Fathy — Cyber Security Portfolio">
+<title>Basmala Ayman | Cyber Security Portfolio</title>
+<style>
+:root{
+  --bg:#050b10;--panel:#0a131a;--panel2:#0e1b23;--line:rgba(91,245,188,.15);
+  --text:#eefaf6;--muted:#8da7a0;--green:#55f2b5;--cyan:#58d7ff;--purple:#9b7cff;
+  --shadow:0 24px 70px rgba(0,0,0,.35);--radius:22px;--max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:
+radial-gradient(circle at 80% 5%,rgba(85,242,181,.09),transparent 28%),
+radial-gradient(circle at 10% 35%,rgba(88,215,255,.06),transparent 25%),var(--bg);
+color:var(--text);line-height:1.7;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.14;background-image:
+linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 75%);z-index:-1}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(5,11,16,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;letter-spacing:.08em}.logo b{color:var(--green)}
+.navlinks{display:flex;gap:30px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--green)}
+.menu{display:none;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:center;padding:75px 0 85px}
+.kicker{color:var(--green);font:700 .75rem/1.2 Consolas,monospace;letter-spacing:.18em;text-transform:uppercase}
+.kicker:before{content:"";display:inline-block;width:34px;height:1px;background:var(--green);vertical-align:middle;margin-right:10px;box-shadow:0 0 12px var(--green)}
+h1{font-size:clamp(3.4rem,7vw,6.5rem);line-height:.93;letter-spacing:-.07em;margin:22px 0}
+h1 span{background:linear-gradient(100deg,var(--green),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:650px;color:var(--muted);font-size:1.05rem}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.025);font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-3px);border-color:var(--green);box-shadow:0 12px 35px rgba(85,242,181,.1)}
+.btn.primary{background:var(--green);color:#03110c;border-color:var(--green)}
+.stats{display:flex;gap:32px;padding-top:22px;border-top:1px solid var(--line);margin-top:28px}
+.stat strong{display:block;font-size:1.3rem}.stat small{color:var(--muted);font-size:.76rem}
+.cyber-card{position:relative;min-height:510px;border:1px solid var(--line);border-radius:32px;background:linear-gradient(145deg,rgba(15,31,40,.95),rgba(7,14,19,.98));box-shadow:var(--shadow);overflow:hidden;padding:26px}
+.cyber-card:before{content:"";position:absolute;width:320px;height:320px;border:1px solid rgba(85,242,181,.22);border-radius:50%;right:-115px;top:-90px;box-shadow:0 0 0 30px rgba(85,242,181,.025),0 0 0 60px rgba(85,242,181,.018)}
+.terminal{font:12px/1.8 Consolas,monospace;color:#8feac7;position:relative;z-index:1}
+.terminal .dim{color:#59756e}.terminal .cyan{color:var(--cyan)}.terminal .purple{color:var(--purple)}
+.avatar{position:absolute;inset:0;display:grid;place-items:center}
+.shield{width:190px;height:220px;clip-path:polygon(50% 0,88% 15%,88% 58%,50% 100%,12% 58%,12% 15%);border:2px solid var(--green);background:linear-gradient(145deg,rgba(85,242,181,.18),rgba(88,215,255,.04));display:grid;place-items:center;box-shadow:0 0 60px rgba(85,242,181,.12)}
+.shield span{font-size:4rem;font-weight:900;color:var(--green);letter-spacing:-.1em}
+.card-bottom{position:absolute;left:26px;right:26px;bottom:24px;border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;align-items:end}
+.card-bottom strong{font-size:1.15rem}.card-bottom small{display:block;color:var(--muted)}.badge{color:var(--green);font:700 .7rem Consolas,monospace}
+section{padding:105px 0}.section-head{margin-bottom:34px}.section-head .kicker{display:block;margin-bottom:9px}.section-head h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em}.section-head p{color:var(--muted);max-width:700px}
+.grid2{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{border:1px solid var(--line);background:linear-gradient(145deg,rgba(14,27,35,.9),rgba(8,16,22,.9));border-radius:var(--radius);padding:28px;box-shadow:0 12px 35px rgba(0,0,0,.14);transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:rgba(85,242,181,.34);box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.card h3{margin-bottom:9px}.card p{color:var(--muted)}.interest{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:1px solid rgba(85,242,181,.18);background:rgba(85,242,181,.05);color:#9beacb;border-radius:999px;padding:5px 10px;font-size:.76rem}
+.icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line);color:var(--green);margin-bottom:20px;font-weight:900}
+.timeline{position:relative;display:grid;gap:16px}.timeline .card{position:relative;padding-left:30px}.timeline .card:before{content:"";position:absolute;left:0;top:31px;width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green)}
+.label{display:inline-block;color:var(--green);font:700 .7rem Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.skill-card h3{font-size:1.05rem}.skill-card p{font-size:.9rem}.meter{height:4px;background:#15252c;border-radius:9px;margin-top:18px;overflow:hidden}.meter i{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--green),var(--cyan));box-shadow:0 0 12px rgba(85,242,181,.4)}
+.credential{min-height:130px}.credential strong{display:block;margin-bottom:7px}.credential span{color:var(--muted);font-size:.85rem}
+.contact{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:36px}.contact h2{font-size:2rem}.contact p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}
+@media(max-width:650px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#071016;padding:15px 4%;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.navlinks a{padding:10px 0}.menu{display:block}.hero{padding-top:55px}.stats{gap:16px;flex-wrap:wrap}.grid4,.grid3{grid-template-columns:1fr}.cyber-card{min-height:420px}.contact{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<nav class="nav container">
+<a class="logo" href="#home">BASMALA<b>.</b></a>
+<button class="menu" id="menu">MENU</button>
+<div class="navlinks" id="links">
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certs">Credentials</a><a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero container" id="home">
+<div>
+<div class="kicker">Cyber Security Portfolio</div>
+<h1>Basmala Ayman<br><span>Fathy</span></h1>
+<p>Computer Science student specializing in Cyber Security at Arab Open University. Building practical foundations in Penetration Testing, Linux, Web technologies, networking, Python, and security fundamentals through DEPI training, coursework, and hands-on practice.</p>
+<div class="actions">
+<a class="btn primary" href="#skills">Explore Skills →</a>
+<a class="btn" href="#contact">Contact Me</a>
+</div>
+<div class="stats">
+<div class="stat"><strong>2027</strong><small>Expected Graduation</small></div>
+<div class="stat"><strong>03</strong><small>Cisco Certificates</small></div>
+<div class="stat"><strong>CCNA</strong><small>Course Training</small></div>
+</div>
+</div>
+<div class="cyber-card">
+<div class="terminal"><span class="dim">$</span> whoami<br><span class="cyan">basmala@cyber-lab</span><br><span class="dim">$</span> cat profile.txt<br><span class="purple">role:</span> Cyber Security Student<br><span class="purple">focus:</span> Penetration Testing<br><span class="purple">status:</span> Learning & Building</div>
+<div class="avatar"><div class="shield"><span>BA</span></div></div>
+<div class="card-bottom"><div><strong>Basmala Ayman Fathy</strong><small>Arab Open University · Cairo, Egypt</small></div><span class="badge">SECURITY / 2027</span></div>
+</div>
+</section>
+
+<section class="container" id="about">
+<div class="section-head"><span class="kicker">01 / PROFILE</span><h2>About Me</h2><p>A focused technical profile built around cybersecurity, networking, and continuous hands-on learning.</p></div>
+<div class="grid2">
+<article class="card"><h3>Who I Am</h3><p>I’m studying Cyber Security at Arab Open University and building my skills through structured training and hands-on technical learning. I’ve also worked with Web technologies and Linux in practical exercises. I’m especially interested in network security and offensive security, and I aim to grow into responsible security work while continuing to learn.</p></article>
+<article class="card"><h3>Areas of Interest</h3><p>Network security, network defense, offensive security fundamentals, and Red Teaming.</p><div class="interest"><span class="tag">Security Fundamentals</span><span class="tag">Networking</span><span class="tag">Linux</span></div></article>
+</div>
+</section>
+
+<section class="container" id="skills">
+<div class="section-head"><span class="kicker">02 / TECHNICAL PROFILE</span><h2>Skills & Expertise</h2><p>Core technical areas developed through coursework, training, and practical exercises.</p></div>
+<div class="grid4">
+<article class="card skill-card"><div class="icon">01</div><h3>Cybersecurity</h3><p>Penetration Testing, Security Fundamentals, Network Defense, and Offensive Security Fundamentals.</p><div class="meter"><i style="--w:86%"></i></div></article>
+<article class="card skill-card"><div class="icon">02</div><h3>Networking</h3><p>TCP/IP, Routing & Switching, Network Protocols, and Network Security.</p><div class="meter"><i style="--w:88%"></i></div></article>
+<article class="card skill-card"><div class="icon">03</div><h3>Python</h3><p>Python fundamentals and scripting for technical learning and problem-solving.</p><div class="meter"><i style="--w:72%"></i></div></article>
+<article class="card skill-card"><div class="icon">04</div><h3>Web & Linux</h3><p>Hands-on experience working with Linux environments and Web technologies through practical exercises.</p><div class="meter"><i style="--w:78%"></i></div></article>
+</div>
+<div class="interest" style="margin-top:22px">
+  <span class="tag">Penetration Testing — DEPI</span>
+  <span class="tag">Linux</span>
+  <span class="tag">Web Technologies</span>
+  <span class="tag">Networking</span>
+</div>
+</section>
+
+<section class="container" id="education">
+<div class="section-head"><span class="kicker">03 / EDUCATION</span><h2>Education & Training</h2><p>Academic background and practical cybersecurity training.</p></div>
+<div class="timeline">
+<article class="card"><span class="label">Education · Expected Graduation 2027</span><h3>B.Sc. in Computer Science — Cyber Security</h3><p>Arab Open University · Cairo, Egypt</p></article>
+<article class="card"><span class="label">Practical Training</span><h3>Digital Egypt Pioneers Initiative (DEPI)</h3><p>Cyber Security trainee with practical training in Penetration Testing, security fundamentals, networking, and Linux.</p></article>
+</div>
+</section>
+
+<section class="container" id="certs">
+<div class="section-head"><span class="kicker">04 / CREDENTIALS</span><h2>Training & Certifications</h2><p>Technical training and certificates from the Cisco learning journey.</p></div>
+<div class="grid3">
+<article class="card credential"><strong>CCNA Training</strong><span>Completed CCNA course training · Cisco</span></article>
+<article class="card credential"><strong>Cisco Certificates</strong><span>Earned 3 certificates from Cisco</span></article>
+<article class="card credential"><strong>CompTIA Network+</strong><span>Training</span></article>
+<article class="card credential"><strong>Python Programming</strong><span>Fundamentals & Scripting</span></article>
+<article class="card credential"><strong>Microsoft Office Specialist</strong><span>Word · Excel · PowerPoint</span></article>
+</div>
+<div class="interest" style="margin-top:22px"><span class="tag">Arabic: Native</span><span class="tag">English: Intermediate (B1)</span></div>
+</section>
+
+<section class="container" id="contact">
+<div class="card contact">
+<div><span class="kicker">05 / CONTACT</span><h2>Let’s Connect</h2><p>Open to cybersecurity learning and professional opportunities.</p></div>
+<div class="actions" style="margin:0"><a class="btn primary" href="mailto:ba264226@gmail.com">Email Me</a><a class="btn" href="tel:+201119176023" dir="ltr">+20 111 917 6023</a></div>
+</div>
+</section>
+</main>
+<footer><div class="container">© <span id="year"></span> Basmala Ayman Fathy · Cyber Security Portfolio</div></footer>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
